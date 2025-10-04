@@ -1,0 +1,19 @@
+@model Parcial.Models.Curso
+@{
+    ViewData["Title"] = "Eliminar Curso";
+}
+<h2>@ViewData["Title"]</h2>
+<h3>¿Estás seguro que deseas eliminar este curso?</h3>
+<div>
+    <dl class="row">
+        <dt class="col-sm-2">Código</dt>
+        <dd class="col-sm-10">@Model.Codigo</dd>
+        <dt class="col-sm-2">Nombre</dt>
+        <dd class="col-sm-10">@Model.Nombre</dd>
+    </dl>
+</div>
+<form asp-action="Delete">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit" class="btn btn-danger">Eliminar</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+</form>
