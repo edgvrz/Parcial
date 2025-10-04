@@ -1,0 +1,33 @@
+# Visual Studio / .NET
+bin/
+obj/
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# dotnet
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Rider
+.idea/
+
+# Visual Studio Code
+.vscode/
+
+# SQLite DB (no versiones bin)
+*.db
+*.sqlite
+app.db
+
+# npm
+node_modules/
+
+# User secrets
+secrets.json
+
+# publish
+publish/
